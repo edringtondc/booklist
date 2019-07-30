@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use App\Models\Book;
+use App\Book;
+
 
 // namespace
 // use App\Book
@@ -33,10 +34,25 @@ class BooksController extends Controller
      */
     public function index()
     {
-        $books = Book:: orderBy('due_date', 'asc')->paginate(3);
-
-        return view('books.index')->with('books', $books);
+       
+            $books = Book:: orderBy('Title', 'asc')->paginate(3);
+    
+            return view('books.index')->with('books', $books);
+        
+    
+    
     }
+    /**
+     * Sort by author and Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    // public function auth_sort()
+    // {
+    //     /* Store all books in $books and return the index view. Order returned books and paginate (6 per page)*/
+    //     $books = Book::orderby('author','asc') -> paginate(8);
+    //     return view('books.auth_sort', ['books' => $books]);
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -57,28 +73,41 @@ class BooksController extends Controller
      */
     public function store(Request $request)
     {
+
+    
         //    validate data
         $this->validate($request, [
-            'name' => 'required|string|max:255|min:3' ,
-            'description' => 'required|string|max:10000|min:10',
-            'due_date' => 'required|date|'
+
+            'Author' => 'required|string|max:255|min:3' ,
+            'Title' => 'required|string|max:255|min:3',
+            'hasRead' => 'required|boolean|'
+
         ]);
         //    create new Book
 
-        $book = new Book;
+        $book = new Book([
+            'id' => $request-> get('id'),
+            'Title' => $request-> get('Title'),
+            'Author' => $request-> get('Author'),
+            'hasRead' => $request-> get('hasRead'),
+            'Saved' => $request-> get('Saved')
+        
+        ]);
+       
 
         //     assign book data from request
-        $book->name = $request->name;
-        $book->description = $request->description;
-        $book->due_date = $request->due_date;
+        
         //    save book
-            $book->save();
+        $book->save();
         //    flash session message with success
         Session::flash('success', 'Created Book Successfully');
         //    return a redirect
 
-        return redirect()->route('book.index');
+        return redirect()->route('books.index');
     }
+
+
+    
 
     /**
      * Display the specified resource.
@@ -99,10 +128,10 @@ class BooksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function edit($id)
     {
         $book = Book::find($id);
-        $book->dueDateFormatting = false;
 
         return view('books.edit')->withBook($book);
     }
@@ -114,17 +143,21 @@ class BooksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
     public function update(Request $request, $id)
     {
              //    validate data
              $this->validate($request, [
-                'name' => 'required|string|max:255|min:3' ,
-                'description' => 'required|string|max:10000|min:10',
-                'due_date' => 'required|date|'
+                'Author' => 'required|string|max:255|min:3' ,
+                'Title' => 'required|string|max:10000|min:10',
+                'Read' => 'required|boolean|',
+                'Saved' => 'required|boolean|'
+
             ]);
 
             //    find the related Book
-            $book = Book::find($id);
+            $book = book::find($id);
     
             //     assign book data from request
             $book->name = $request->name;
@@ -147,7 +180,7 @@ class BooksController extends Controller
      */
     public function destroy($id)
     {   //finding specific book by id
-        $book = Book::find($id);
+        $book = book::find($id);
 
         //deleting the book
         $book->delete();

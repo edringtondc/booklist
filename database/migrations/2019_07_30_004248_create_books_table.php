@@ -12,10 +12,17 @@ class CreateBooksTable extends Migration
      * @return void
      */
     public function up()
+
     {
+
+        Schema::dropIfExists('books');
         Schema::create('books', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->increments('id');
+            $table->string('Title');
+            $table->string('Author');
+            $table->boolean('hasRead');
+            $table->boolean('Saved');
+
         });
     }
 

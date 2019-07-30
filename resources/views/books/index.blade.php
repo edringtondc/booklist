@@ -6,7 +6,7 @@
 
     <div class="row justify-content-center mb-3">
         <div class="col-sm-4">
-            <a href="{{route('book.create')}}" class="btn btn-block btn-success">Create Task</a>
+            <a href="{{route('books.create')}}" class="btn btn-block btn-success">Create Book</a>
         </div>
     </div>
 
@@ -19,16 +19,22 @@
           <div class="row pb-3" style="border-bottom: 1px gray solid">
 
             <div class="col-sm-12 mt-3">
-               <h3 > {{ $book->name }} </h3>
-               <small> {{$book->created_at}}</small>
+               <h3 > {{ $book->Title }} </h3>
+               <h5> by {{$book->Author}}</h5>
                <hr>
-            <p>{{ $book->description}}</p>
+         
+                @if ($book->hasRead )
+               <p> Read!</p>
+                @else
+                <p> Not Read!</p>
+                @endif
+          
             
-                <h5> Due Date: {{$book->due_date}} </h5>
+            
 
-                {!! Form::open(['route' => ['book.destroy', $book->id], 'method' => 'DELETE']) !!}
-                <a href="{{ route('book.edit', $book->id) }}" class="btn btn-sm btn-primary">Edit</a>
-
+                {!! Form::open(['route' => ['books.destroy', $book->id], 'method' => 'DELETE']) !!}
+                <a href="{{ route('books.edit', $book->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                    <button type="submit" class="btn btn-sm btn-success ">Save</button>
                     <button type="submit" class="btn btn-sm btn-danger ">Delete</button>
                 {!! Form::close() !!}
                 

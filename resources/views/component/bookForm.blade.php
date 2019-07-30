@@ -1,18 +1,24 @@
 
     {{-- name --}}
-    {{ Form::label('name', 'Book Name', ['class' => 'control-label']) }}
-    {{ Form::text('name', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Book Name'])}}
+  
+    {{ Form::label('Title', 'Title', ['class' => 'control-label']) }}
+    {{ Form::text('Title', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Title'])}}
 
     {{-- description --}}
-    {{ Form::label('description', 'Book Description', ['class' => 'control-label mt-3']) }}
-    {{ Form::textarea('description', null, ['class' => 'form-control', 'placeholder' => 'Book Description'])}}
+    {{ Form::label('Author', 'Author', ['class' => 'control-label mt-3']) }}
+    {{ Form::text('Author', null, ['class' => 'form-control', 'placeholder' => 'Author'])}}
 
-    {{ Form::label('due_date', 'Due Date', ['class' => 'control-label mt-3']) }}
-    {{ Form::date('due_date', null, ['class' => 'form-control'] ) }}
+   
+    {{ Form::label('hasRead', 'Have your read this?', ['class' => 'control-label mt-3']) }}
+    
+    {{ Form::label('Yes', 'Yes', ['class' => 'control-label mt-3']) }}
+    {{ Form::radio('hasRead', 'Yes' , true) }}
+    {{ Form::label('No', 'No', ['class' => 'control-label mt-3']) }}
+    {{ Form::radio('hasRead', 'No' , false) }}
 
     <div class="row justify-content-center mt-3">
         <div class="col-sm-4">
-        <a href="{{ route('book.index') }}" class="btn btn-block btn-secondary">Go Back</a>
+        <a href="{{ route('books.index') }}" class="btn btn-block btn-secondary">Go Back</a>
         </div>
         <div class="col-sm-4">
             <button class="btn btn-block btn-primary" type="submit">Save Book</button>

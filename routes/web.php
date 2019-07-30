@@ -12,11 +12,11 @@
 */
 
 //define resource routes first
-Route::resource('book', 'BooksController');
+Route::resource('books', 'BooksController');
 
 //home page
 Route::get('/', function () {
-    return redirect()->route('book.index');
+    return redirect()->route('books.index');
 });
 
 // Route::get('/', function()
