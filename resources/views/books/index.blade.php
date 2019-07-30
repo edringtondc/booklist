@@ -8,6 +8,9 @@
         <div class="col-sm-4">
             <a href="{{route('books.create')}}" class="btn btn-block btn-success">Create Book</a>
         </div>
+        {{--  <div class="col-sm-4">
+                <a href="{{route('books.search')}}"  class="btn btn-block btn-success">Search a Book</a>
+        </div>  --}}
     </div>
 
     @if($books->count() == 0)

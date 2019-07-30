@@ -12,9 +12,11 @@
     {{ Form::label('hasRead', 'Have your read this?', ['class' => 'control-label mt-3']) }}
     
     {{ Form::label('Yes', 'Yes', ['class' => 'control-label mt-3']) }}
-    {{ Form::radio('hasRead', 'Yes' , true) }}
+    {{ Form::radio('hasRead', '1' , true) }}
     {{ Form::label('No', 'No', ['class' => 'control-label mt-3']) }}
-    {{ Form::radio('hasRead', 'No' , false) }}
+    {{ Form::radio('hasRead', '0' , false) }}
+
+    
 
     <div class="row justify-content-center mt-3">
         <div class="col-sm-4">

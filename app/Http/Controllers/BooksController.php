@@ -64,6 +64,17 @@ class BooksController extends Controller
     {
         return view('books.create');
     }
+     /**
+     * Show the form for searching a new book.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    //  /books/search
+
+    public function search()
+    {
+        return view('books.search');
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -76,13 +87,13 @@ class BooksController extends Controller
 
     
         //    validate data
-        $this->validate($request, [
+        // $this->validate($request, [
 
-            'Author' => 'required|string|max:255|min:3' ,
-            'Title' => 'required|string|max:255|min:3',
-            'hasRead' => 'required|boolean|'
+        //     'Author' => 'required|string|max:255|min:3' ,
+        //     'Title' => 'required|string|max:255|min:3',
+        //     'hasRead' => 'required|boolean|'
 
-        ]);
+        // ]);
         //    create new Book
 
         $book = new Book([
@@ -90,7 +101,7 @@ class BooksController extends Controller
             'Title' => $request-> get('Title'),
             'Author' => $request-> get('Author'),
             'hasRead' => $request-> get('hasRead'),
-            'Saved' => $request-> get('Saved')
+            'Saved' => true
         
         ]);
        
@@ -153,6 +164,7 @@ class BooksController extends Controller
                 'Title' => 'required|string|max:10000|min:10',
                 'Read' => 'required|boolean|',
                 'Saved' => 'required|boolean|'
+            
 
             ]);
 
@@ -192,3 +204,5 @@ class BooksController extends Controller
         return redirect()->route('book.index');
     }
 }
+
+

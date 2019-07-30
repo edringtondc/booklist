@@ -19,6 +19,9 @@ Route::get('/', function () {
     return redirect()->route('books.index');
 });
 
+
+
+
 // Route::get('/', function()
 // {
 //     return User::all();
