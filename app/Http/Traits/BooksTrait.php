@@ -4,10 +4,10 @@
 
     use Carbon\Carbon;
 
-    trait TasksTrait {
+    trait BooksTrait {
 
      
-        public $dueDateFormatting = true;
+        public $dueDateFormatting = true; 
 
         public function getDueDateAttribute($value){
             if($this->dueDateFormatting){

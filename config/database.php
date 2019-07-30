@@ -2,11 +2,11 @@
 
 use Illuminate\Support\Str;
 
-$DATABASE_URL = parse_url('mysql://da9im8zl278ryveh:q2l9j9gvcmrzx3kc@y0nkiij6humroewt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/zz0pgp0lkz8t2pns');
-$host = $DATABASE_URL['host'];
-$username = $DATABASE_URL['user'];
-$password = $DATABASE_URL['pass'];
-$database = ltrim($DATABASE_URL["path"], '/');
+// $DATABASE_URL = parse_url('mysql://da9im8zl278ryveh:q2l9j9gvcmrzx3kc@y0nkiij6humroewt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/zz0pgp0lkz8t2pns');
+// $host = $DATABASE_URL['host'];
+// $username = $DATABASE_URL['user'];
+// $password = $DATABASE_URL['pass'];
+// $database = ltrim($DATABASE_URL["path"], '/');
 
 return [
 
@@ -43,10 +43,10 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
+            'host' => env('DB_HOST', 'localhost'),
+            'database' => env('DB_DATABASE', 'books'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', 'root'),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',

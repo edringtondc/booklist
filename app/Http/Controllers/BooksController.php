@@ -4,10 +4,27 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use App\Models\Task;
+use App\Models\Book;
 
+// namespace
+// use App\Book
 
-class TasksController extends Controller
+// function to store all books and return all books view
+
+// function to sort by author
+
+// function to create a new book
+
+// function to store book in database 
+// title, author, picURL
+
+// function to show book (singular)
+
+// function to save book as toread/hasread
+
+// function to delete book from list
+
+class BooksController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +33,9 @@ class TasksController extends Controller
      */
     public function index()
     {
-        $tasks = Task:: orderBy('due_date', 'asc')->paginate(3);
+        $books = Book:: orderBy('due_date', 'asc')->paginate(3);
 
-        return view('tasks.index')->with('tasks', $tasks);
+        return view('books.index')->with('books', $books);
     }
 
     /**
@@ -26,10 +43,10 @@ class TasksController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    //  /tasks/create
+    //  /books/create
     public function create()
     {
-        return view('tasks.create');
+        return view('books.create');
     }
 
     /**
@@ -46,21 +63,21 @@ class TasksController extends Controller
             'description' => 'required|string|max:10000|min:10',
             'due_date' => 'required|date|'
         ]);
-        //    create new Task
+        //    create new Book
 
-        $task = new Task;
+        $book = new Book;
 
-        //     assign task data from request
-        $task->name = $request->name;
-        $task->description = $request->description;
-        $task->due_date = $request->due_date;
-        //    save task
-            $task->save();
+        //     assign book data from request
+        $book->name = $request->name;
+        $book->description = $request->description;
+        $book->due_date = $request->due_date;
+        //    save book
+            $book->save();
         //    flash session message with success
-        Session::flash('success', 'Created Task Successfully');
+        Session::flash('success', 'Created Book Successfully');
         //    return a redirect
 
-        return redirect()->route('task.index');
+        return redirect()->route('book.index');
     }
 
     /**
@@ -71,9 +88,9 @@ class TasksController extends Controller
      */
     public function show($id)
     {
-        //search the task iwth the id
+        //search the book with the id
         //return a view(show.blade.pho)
-        //pass variable with return that contains the specific tasks.
+        //pass variable with return that contains the specific books.
     }
 
     /**
@@ -84,10 +101,10 @@ class TasksController extends Controller
      */
     public function edit($id)
     {
-        $task = Task::find($id);
-        $task->dueDateFormatting = false;
+        $book = Book::find($id);
+        $book->dueDateFormatting = false;
 
-        return view('tasks.edit')->withTask($task);
+        return view('books.edit')->withBook($book);
     }
 
     /**
@@ -106,20 +123,20 @@ class TasksController extends Controller
                 'due_date' => 'required|date|'
             ]);
 
-            //    find the related Task
-            $task = Task::find($id);
+            //    find the related Book
+            $book = Book::find($id);
     
-            //     assign task data from request
-            $task->name = $request->name;
-            $task->description = $request->description;
-            $task->due_date = $request->due_date;
-            //    save task
-                $task->save();
+            //     assign book data from request
+            $book->name = $request->name;
+            $book->description = $request->description;
+            $book->due_date = $request->due_date;
+            //    save book
+                $book->save();
             //    flash session message with success
-            Session::flash('success', 'Saved Task Successfully');
+            Session::flash('success', 'Saved Book Successfully');
             //    return a redirect
     
-            return redirect()->route('task.index');
+            return redirect()->route('book.index');
     }
 
     /**
@@ -129,16 +146,16 @@ class TasksController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {   //finding specific task by id
-        $task = Task::find($id);
+    {   //finding specific book by id
+        $book = Book::find($id);
 
-        //deleting the task
-        $task->delete();
+        //deleting the book
+        $book->delete();
 
         //session message
-        Session::flash('sucess', 'Deleted the task successfully');
+        Session::flash('success', 'Deleted the book successfully');
 
         //returning a redirect to the index page
-        return redirect()->route('task.index');
+        return redirect()->route('book.index');
     }
 }

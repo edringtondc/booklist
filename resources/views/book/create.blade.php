@@ -1,14 +1,14 @@
 @extends('layouts.main')
 
-@section('title', 'Create Task')
+@section('title', 'Create Book')
 
 @section('content')
 
     <div class="row">
         <div class="col-sm-12">
-            <h1>Create Task</h1>
-            {!! Form::open(['route'=> 'task.store', 'method' => 'POST']) !!}
-            @component('component.taskForm')
+            <h1>Create Book</h1>
+            {!! Form::open(['route'=> 'book.store', 'method' => 'POST']) !!}
+            @component('component.bookForm')
             @endcomponent
 
             {!! Form::close() !!}
