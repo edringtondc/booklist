@@ -7,7 +7,7 @@
     <div class="row justify-content-center mb-3">
         <div class="col-sm-4">
             <a href="{{route('books.create')}}" class="btn btn-block btn-success">Create Book</a>
-            <a href="{{route('book.author_sort')}}" class="btn btn-block btn-secondary">Sort By Author</a>
+            <a href="{{route('books.authorSort')}}"  class="btn btn-block btn-secondary">Sort By Author</a>
         </div>
         {{--  <div class="col-sm-4">
                 <a href="{{route('books.search')}}"  class="btn btn-block btn-success">Search a Book</a>

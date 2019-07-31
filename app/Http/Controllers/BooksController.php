@@ -7,8 +7,6 @@ use Illuminate\Support\Facades\Session;
 use App\Book;
 
 
-// namespace
-// use App\Book
 
 // function to store all books and return all books view
 
@@ -35,7 +33,7 @@ class BooksController extends Controller
     public function index()
     {
        
-            $books = Book:: orderBy('Title', 'asc')->paginate(3);
+            $books = Book::orderBy('Title', 'asc')->paginate(3);
     
             return view('books.index')->with('books', $books);
         
@@ -48,11 +46,12 @@ class BooksController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function author_sort()
-    {
+    public function authorort()
+    {   
+      
         /* Store all books in $books and return the index view. Order returned books and paginate (6 per page)*/
-        $books = Book::orderby('Author','asc') -> paginate(8);
-        return redirect()->route('book.index');
+        $books = Book::orderby('Author','asc') -> paginate(3);
+        return view('books.authorSort')->with('books', $books);
        
     }
 

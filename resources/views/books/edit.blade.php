@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-sm-12">
             <h1>Edit Book</h1>
-            {!! Form::model($book, ['route'=> ['book.update', $book->id ], 'method' => 'PUT']) !!}
+            {!! Form::model($book, ['route'=> ['books.update', $book->id ], 'method' => 'PUT']) !!}
             @component('component.bookForm')
             @endcomponent
 

@@ -10,7 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::get('books/authorSort', function (){
+//     return view('books.authorSort');
+// })->name('authorSort');
+// Route::get('books', 'BooksController@authorSort'); // note the name() method.
 
+Route::get('/books/authorSort', 'BooksController@authorSort')->name('books.authorSort');
+Route::get('/books/search', 'BooksController@search')->name('books.search');
 //define resource routes first
 Route::resource('books', 'BooksController');
 
@@ -24,11 +30,18 @@ Route::get('/', function () {
 
 
 
+// Route::get('books/authorSort','BooksController@authorSort');
+
+
+
+
+
+
 // Route::get('/', function()
 // {
 //     return User::all();
 // });
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
