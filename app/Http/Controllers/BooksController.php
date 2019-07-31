@@ -42,17 +42,19 @@ class BooksController extends Controller
     
     
     }
+
     /**
      * Sort by author and Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    // public function auth_sort()
-    // {
-    //     /* Store all books in $books and return the index view. Order returned books and paginate (6 per page)*/
-    //     $books = Book::orderby('author','asc') -> paginate(8);
-    //     return view('books.auth_sort', ['books' => $books]);
-    // }
+    public function author_sort()
+    {
+        /* Store all books in $books and return the index view. Order returned books and paginate (6 per page)*/
+        $books = Book::orderby('Author','asc') -> paginate(8);
+        return redirect()->route('book.index');
+       
+    }
 
     /**
      * Show the form for creating a new resource.

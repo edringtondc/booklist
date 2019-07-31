@@ -1,13 +1,12 @@
 @extends('layouts.main')
 
-@section('title', 'Book Home')
+@section('title', 'Author Sort')
 
 @section('content')
 
     <div class="row justify-content-center mb-3">
         <div class="col-sm-4">
             <a href="{{route('books.create')}}" class="btn btn-block btn-success">Create Book</a>
-            <a href="{{route('book.author_sort')}}" class="btn btn-block btn-secondary">Sort By Author</a>
         </div>
         {{--  <div class="col-sm-4">
                 <a href="{{route('books.search')}}"  class="btn btn-block btn-success">Search a Book</a>
