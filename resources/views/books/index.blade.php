@@ -4,6 +4,7 @@
 
 @section('content')
 
+
     <div class="row justify-content-center mb-3">
         <div class="col-sm-4">
             <a href="{{route('books.create')}}" class="btn btn-block btn-success">Create Book</a>

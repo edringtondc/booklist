@@ -20,6 +20,7 @@ Route::get('/books/search', 'BooksController@search')->name('books.search');
 //define resource routes first
 Route::resource('books', 'BooksController');
 
+Route::get('json-api', 'ApiController@index');
 //home page
 Route::get('/', function () {
     return redirect()->route('books.index');
