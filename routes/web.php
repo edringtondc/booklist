@@ -16,11 +16,11 @@
 // Route::get('books', 'BooksController@authorSort'); // note the name() method.
 
 Route::get('/books/authorSort', 'BooksController@authorSort')->name('books.authorSort');
+
 Route::get('/books/search', 'BooksController@search')->name('books.search');
 //define resource routes first
 Route::resource('books', 'BooksController');
 
-Route::get('json-api', 'ApiController@index');
 //home page
 Route::get('/', function () {
     return redirect()->route('books.index');

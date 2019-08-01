@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+    <Request>
+        <authentication>true</authentication>
+        <key>
+            <![CDATA[CkKrxjT8sCHtGJZwrnDQ]]>
+        </key>
+        <method>
+            <![CDATA[search_index]]>
+        </method>
+    </Request>
+    <search>
+        <query>
+            <![CDATA[rebecca]]>
+        </query>
+        <results-start>1</results-start>
+        <results-end>20</results-end>
+        <total-results>34285</total-results>
+        <source>Goodreads</source>
+        <query-time-seconds>0.20</query-time-seconds>
+        <results>
+            <work>
+                <id type="integer">46663</id>
+                <books_count type="integer">388</books_count>
+                <ratings_count type="integer">393358</ratings_count>
+                <text_reviews_count type="integer">19621</text_reviews_count>
+                <original_publication_year type="integer">1938</original_publication_year>
+                <original_publication_month type="integer">8</original_publication_month>
+                <original_publication_day type="integer" nil="true"/>
+                <average_rating>4.22</average_rating>
+                <best_book type="Book">
+                    <id type="integer">17899948</id>
+                    <title>Rebecca</title>
+                    <author>
+                        <id type="integer">2001717</id>
+                        <name>Daphne du Maurier</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386605169l/17899948._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386605169l/17899948._SX50_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">3015332</id>
+                <books_count type="integer">133</books_count>
+                <ratings_count type="integer">24467</ratings_count>
+                <text_reviews_count type="integer">868</text_reviews_count>
+                <original_publication_year type="integer">1980</original_publication_year>
+                <original_publication_month type="integer" nil="true"/>
+                <original_publication_day type="integer" nil="true"/>
+                <average_rating>3.88</average_rating>
+                <best_book type="Book">
+                    <id type="integer">41689</id>
+                    <title>The Key to Rebecca</title>
+                    <author>
+                        <id type="integer">3447</id>
+                        <name>Ken Follett</name>
+                    </author>
+                    <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+                    <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">22246649</id>
+                <books_count type="integer">17</books_count>
+                <ratings_count type="integer">13011</ratings_count>
+                <text_reviews_count type="integer">900</text_reviews_count>
+                <original_publication_year type="integer">2012</original_publication_year>
+                <original_publication_month type="integer">11</original_publication_month>
+                <original_publication_day type="integer">3</original_publication_day>
+                <average_rating>4.14</average_rating>
+                <best_book type="Book">
+                    <id type="integer">22485178</id>
+                    <title>Finding Rebecca</title>
+                    <author>
+                        <id type="integer">6620682</id>
+                        <name>Eoin Dempsey</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408470442l/22485178._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408470442l/22485178._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">6684634</id>
+                <books_count type="integer">80</books_count>
+                <ratings_count type="integer">510905</ratings_count>
+                <text_reviews_count type="integer">32308</text_reviews_count>
+                <original_publication_year type="integer">2010</original_publication_year>
+                <original_publication_month type="integer">2</original_publication_month>
+                <original_publication_day type="integer">2</original_publication_day>
+                <average_rating>4.06</average_rating>
+                <best_book type="Book">
+                    <id type="integer">6493208</id>
+                    <title>The Immortal Life of Henrietta Lacks</title>
+                    <author>
+                        <id type="integer">2940640</id>
+                        <name>Rebecca Skloot</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327878144l/6493208._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327878144l/6493208._SX50_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">1063767</id>
+                <books_count type="integer">343</books_count>
+                <ratings_count type="integer">32037</ratings_count>
+                <text_reviews_count type="integer">696</text_reviews_count>
+                <original_publication_year type="integer">1903</original_publication_year>
+                <original_publication_month type="integer" nil="true"/>
+                <original_publication_day type="integer" nil="true"/>
+                <average_rating>3.87</average_rating>
+                <best_book type="Book">
+                    <id type="integer">17529</id>
+                    <title>Rebecca of Sunnybrook Farm</title>
+                    <author>
+                        <id type="integer">8105</id>
+                        <name>Kate Douglas Wiggin</name>
+                    </author>
+                    <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+                    <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">1010054</id>
+                <books_count type="integer">78</books_count>
+                <ratings_count type="integer">500466</ratings_count>
+                <text_reviews_count type="integer">4197</text_reviews_count>
+                <original_publication_year type="integer">1997</original_publication_year>
+                <original_publication_month type="integer" nil="true"/>
+                <original_publication_day type="integer" nil="true"/>
+                <average_rating>3.81</average_rating>
+                <best_book type="Book">
+                    <id type="integer">137791</id>
+                    <title>Divine Secrets of the Ya-Ya Sisterhood</title>
+                    <author>
+                        <id type="integer">3489</id>
+                        <name>Rebecca Wells</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408313524l/137791._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408313524l/137791._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">1393833</id>
+                <books_count type="integer">39</books_count>
+                <ratings_count type="integer">2700</ratings_count>
+                <text_reviews_count type="integer">360</text_reviews_count>
+                <original_publication_year type="integer">2000</original_publication_year>
+                <original_publication_month type="integer" nil="true"/>
+                <original_publication_day type="integer" nil="true"/>
+                <average_rating>3.47</average_rating>
+                <best_book type="Book">
+                    <id type="integer">92104</id>
+                    <title>Rebecca's Tale</title>
+                    <author>
+                        <id type="integer">52956</id>
+                        <name>Sally Beauman</name>
+                    </author>
+                    <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+                    <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">16501870</id>
+                <books_count type="integer">39</books_count>
+                <ratings_count type="integer">83920</ratings_count>
+                <text_reviews_count type="integer">5892</text_reviews_count>
+                <original_publication_year type="integer">2011</original_publication_year>
+                <original_publication_month type="integer">5</original_publication_month>
+                <original_publication_day type="integer">10</original_publication_day>
+                <average_rating>4.22</average_rating>
+                <best_book type="Book">
+                    <id type="integer">11561469</id>
+                    <title>Reason to Breathe (Breathing, #1)</title>
+                    <author>
+                        <id type="integer">4907787</id>
+                        <name>Rebecca Donovan</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329013365l/11561469._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329013365l/11561469._SX50_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">6608018</id>
+                <books_count type="integer">59</books_count>
+                <ratings_count type="integer">78687</ratings_count>
+                <text_reviews_count type="integer">10979</text_reviews_count>
+                <original_publication_year type="integer">2009</original_publication_year>
+                <original_publication_month type="integer">7</original_publication_month>
+                <original_publication_day type="integer">14</original_publication_day>
+                <average_rating>4.09</average_rating>
+                <best_book type="Book">
+                    <id type="integer">5310515</id>
+                    <title>When You Reach Me</title>
+                    <author>
+                        <id type="integer">175329</id>
+                        <name>Rebecca Stead</name>
+                    </author>
+                    <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+                    <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">26233826</id>
+                <books_count type="integer">51</books_count>
+                <ratings_count type="integer">38668</ratings_count>
+                <text_reviews_count type="integer">4309</text_reviews_count>
+                <original_publication_year type="integer">2014</original_publication_year>
+                <original_publication_month type="integer">5</original_publication_month>
+                <original_publication_day type="integer">20</original_publication_day>
+                <average_rating>3.90</average_rating>
+                <best_book type="Book">
+                    <id type="integer">18528190</id>
+                    <title>Men Explain Things to Me</title>
+                    <author>
+                        <id type="integer">15811</id>
+                        <name>Rebecca Solnit</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1393447237l/18528190._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1393447237l/18528190._SX50_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">23849255</id>
+                <books_count type="integer">4</books_count>
+                <ratings_count type="integer">628</ratings_count>
+                <text_reviews_count type="integer">88</text_reviews_count>
+                <original_publication_year type="integer">2013</original_publication_year>
+                <original_publication_month type="integer">1</original_publication_month>
+                <original_publication_day type="integer">7</original_publication_day>
+                <average_rating>3.66</average_rating>
+                <best_book type="Book">
+                    <id type="integer">17992969</id>
+                    <title>Rebecca</title>
+                    <author>
+                        <id type="integer">5375105</id>
+                        <name>Adam J. Nicolai</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403940784l/17992969._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403940784l/17992969._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">6275255</id>
+                <books_count type="integer">5</books_count>
+                <ratings_count type="integer">2476</ratings_count>
+                <text_reviews_count type="integer">126</text_reviews_count>
+                <original_publication_year type="integer">2009</original_publication_year>
+                <original_publication_month type="integer" nil="true"/>
+                <original_publication_day type="integer" nil="true"/>
+                <average_rating>3.99</average_rating>
+                <best_book type="Book">
+                    <id type="integer">6098121</id>
+                    <title>Meet Rebecca (American Girls: Rebecca, #1)</title>
+                    <author>
+                        <id type="integer">7545</id>
+                        <name>Jacqueline Dembar Greene</name>
+                    </author>
+                    <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+                    <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">18981122</id>
+                <books_count type="integer">35</books_count>
+                <ratings_count type="integer">65463</ratings_count>
+                <text_reviews_count type="integer">3533</text_reviews_count>
+                <original_publication_year type="integer">2012</original_publication_year>
+                <original_publication_month type="integer">4</original_publication_month>
+                <original_publication_day type="integer">30</original_publication_day>
+                <average_rating>4.32</average_rating>
+                <best_book type="Book">
+                    <id type="integer">13454149</id>
+                    <title>Barely Breathing (Breathing, #2)</title>
+                    <author>
+                        <id type="integer">4907787</id>
+                        <name>Rebecca Donovan</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347885288l/13454149._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347885288l/13454149._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">58531414</id>
+                <books_count type="integer">13</books_count>
+                <ratings_count type="integer">28249</ratings_count>
+                <text_reviews_count type="integer">3516</text_reviews_count>
+                <original_publication_year type="integer">2018</original_publication_year>
+                <original_publication_month type="integer">6</original_publication_month>
+                <original_publication_day type="integer">19</original_publication_day>
+                <average_rating>4.24</average_rating>
+                <best_book type="Book">
+                    <id type="integer">45304101</id>
+                    <title>The Great Believers</title>
+                    <author>
+                        <id type="integer">3134707</id>
+                        <name>Rebecca Makkai</name>
+                    </author>
+                    <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+                    <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">19251641</id>
+                <books_count type="integer">32</books_count>
+                <ratings_count type="integer">44867</ratings_count>
+                <text_reviews_count type="integer">3810</text_reviews_count>
+                <original_publication_year type="integer">2013</original_publication_year>
+                <original_publication_month type="integer">6</original_publication_month>
+                <original_publication_day type="integer">6</original_publication_day>
+                <average_rating>4.31</average_rating>
+                <best_book type="Book">
+                    <id type="integer">13638570</id>
+                    <title>Out of Breath (Breathing, #3)</title>
+                    <author>
+                        <id type="integer">4907787</id>
+                        <name>Rebecca Donovan</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1367613888l/13638570._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1367613888l/13638570._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">1750644</id>
+                <books_count type="integer">9</books_count>
+                <ratings_count type="integer">2186</ratings_count>
+                <text_reviews_count type="integer">184</text_reviews_count>
+                <original_publication_year type="integer">1984</original_publication_year>
+                <original_publication_month type="integer">1</original_publication_month>
+                <original_publication_day type="integer">1</original_publication_day>
+                <average_rating>3.49</average_rating>
+                <best_book type="Book">
+                    <id type="integer">16082143</id>
+                    <title>The Sourdough Wars (Rebecca Schwartz, #2)</title>
+                    <author>
+                        <id type="integer">99237</id>
+                        <name>Julie Smith</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1350046794l/16082143._SY160_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1350046794l/16082143._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">58092472</id>
+                <books_count type="integer">18</books_count>
+                <ratings_count type="integer">13132</ratings_count>
+                <text_reviews_count type="integer">2318</text_reviews_count>
+                <original_publication_year type="integer">2018</original_publication_year>
+                <original_publication_month type="integer">9</original_publication_month>
+                <original_publication_day type="integer">11</original_publication_day>
+                <average_rating>3.63</average_rating>
+                <best_book type="Book">
+                    <id type="integer">36399096</id>
+                    <title>The Dinner List</title>
+                    <author>
+                        <id type="integer">3192845</id>
+                        <name>Rebecca Serle</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524243480l/36399096._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524243480l/36399096._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">45671087</id>
+                <books_count type="integer">13</books_count>
+                <ratings_count type="integer">10945</ratings_count>
+                <text_reviews_count type="integer">1368</text_reviews_count>
+                <original_publication_year type="integer">2016</original_publication_year>
+                <original_publication_month type="integer">3</original_publication_month>
+                <original_publication_day type="integer">1</original_publication_day>
+                <average_rating>4.06</average_rating>
+                <best_book type="Book">
+                    <id type="integer">25814394</id>
+                    <title>All the Single Ladies: Unmarried Women and the Rise of an Independent Nation</title>
+                    <author>
+                        <id type="integer">3132215</id>
+                        <name>Rebecca Traister</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454864662l/25814394._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454864662l/25814394._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">18463625</id>
+                <books_count type="integer">31</books_count>
+                <ratings_count type="integer">23776</ratings_count>
+                <text_reviews_count type="integer">2452</text_reviews_count>
+                <original_publication_year type="integer">2012</original_publication_year>
+                <original_publication_month type="integer">8</original_publication_month>
+                <original_publication_day type="integer">7</original_publication_day>
+                <average_rating>3.81</average_rating>
+                <best_book type="Book">
+                    <id type="integer">13262061</id>
+                    <title>Liar &amp; Spy</title>
+                    <author>
+                        <id type="integer">175329</id>
+                        <name>Rebecca Stead</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336000458l/13262061._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336000458l/13262061._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+            <work>
+                <id type="integer">46990492</id>
+                <books_count type="integer">32</books_count>
+                <ratings_count type="integer">7777</ratings_count>
+                <text_reviews_count type="integer">1566</text_reviews_count>
+                <original_publication_year type="integer">2018</original_publication_year>
+                <original_publication_month type="integer">2</original_publication_month>
+                <original_publication_day type="integer">6</original_publication_day>
+                <average_rating>4.04</average_rating>
+                <best_book type="Book">
+                    <id type="integer">35098412</id>
+                    <title>The Queen's Rising (The Queen’s Rising, #1)</title>
+                    <author>
+                        <id type="integer">14926516</id>
+                        <name>Rebecca   Ross</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1498236653l/35098412._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1498236653l/35098412._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+        </results>
+    </search>
+</GoodreadsResponse>

@@ -4,32 +4,61 @@
 
 @section('content')
 
-    <div class="row">
-        <div class="col-sm-12">
-            <h1>Search for a Book</h1>
+<div class="row">
+    <div class="col-sm-12">
+        <h1>Search for a Book</h1>
+
+        @component('component.searchForm')
+        @endcomponent
+    </div>
+
+    <div class="container">
+
+
+
+        <h2>RESULTS</h2>
+
+
+
+
+      
+ 
+         @foreach($results as $book)
+
+          <div class="row pb-3" style="border-bottom: 1px gray solid">
+
+            <div class="col-sm-12 mt-3">
+               <h3 > {{ $book['Title'] }} </h3>
+               <h5> by {{ $book['Author']}}</h5>
+               <hr>
+         
+                {{--  @if ($book->hasRead )
+               <p> Read!</p>
+                @else
+                <p> Not Read!</p>
+                @endif  --}}
+          
             
-            @component('component.searchForm')
-            @endcomponent
-        </div>
-        <div class="container">
+            
 
-            <?php
-            $apiKey = env('APIKEY');
-            $searchTerm = 'To Kill a Mockingbird';
-            $client = new \GuzzleHttp\Client();
-            $request = $client->get('https://www.goodreads.com/search/index.xml?key=' . $apiKey . '&q='. $searchTerm);
-            $body = $request->getBody();
-           
-            $xml = new SimpleXMLElement($body);
-        
-            {{--  foreach($xml ->search->results->work as $work) {
-                echo "<h4>" . $work->best_book->title . "</h4>";
-                echo "<p>" . $work->best_book->author->name . "</p>";
-             };  --}}
-        ?>
-        </div>
+                {{--  {!! Form::open(['route' => ['books.destroy', $book->id], 'method' => 'DELETE']) !!}
+                <a href="{{ route('books.edit', $book->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                    <button type="submit" class="btn btn-sm btn-success ">Save</button>
+                    <button type="submit" class="btn btn-sm btn-danger ">Delete</button>
+                {!! Form::close() !!}  --}}
+                
+      
+            </div>
+         </div>
+    
 
+         @endforeach
+  
+  
 
     </div>
+
+
+</div>
 
 @endsection
