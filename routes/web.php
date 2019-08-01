@@ -21,6 +21,11 @@ Route::get('/books/search', 'BooksController@search')->name('books.search');
 //define resource routes first
 Route::resource('books', 'BooksController');
 
+Route::get('/', function()
+{
+    return Book::all();
+});
+
 //home page
 Route::get('/', function () {
     return redirect()->route('books.index');
