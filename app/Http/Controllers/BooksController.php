@@ -229,7 +229,7 @@ class BooksController extends Controller
         Session::flash('success', 'Deleted the book successfully');
 
         //returning a redirect to the index page
-        return redirect()->route('book.index');
+        return redirect()->route('books.index');
     }
 
     // public function getGoogleBooksRequest()

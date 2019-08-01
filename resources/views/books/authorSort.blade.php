@@ -22,6 +22,7 @@
           <div class="row pb-3" style="border-bottom: 1px gray solid">
 
             <div class="col-sm-12 mt-3">
+                
                <h3 > {{ $book->Title }} </h3>
                <h5> by {{$book->Author}}</h5>
                <hr>
