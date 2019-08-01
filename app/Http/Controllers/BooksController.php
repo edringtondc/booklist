@@ -76,7 +76,7 @@ class BooksController extends Controller
     {
 
         $apiKey = env('APIKEY');
-        $searchTerm = 'sunshine';
+        $searchTerm = '"Harry Potter"';
         $client = new \GuzzleHttp\Client();
         $request = $client->get('https://www.goodreads.com/search/index.xml?key=' . $apiKey . '&q=' . $searchTerm);
         $body = $request->getBody();
