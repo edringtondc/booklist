@@ -74,9 +74,17 @@ class BooksController extends Controller
     //  /books/search/**
     public function search(Request $request)
     {
-        // $searchTerm = '"Harry Potter"';
+       
+         $searchTerm = $request->get('Search');
+     
+         if ($searchTerm === null) {
+            $searchTerm = "Harry Potter";
+         }
+   
+       
+        
 
-        $searchTerm = $request->get('Search');
+       
       
             
         

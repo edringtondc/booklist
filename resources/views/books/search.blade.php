@@ -41,13 +41,11 @@
                 <p> Not Read!</p>
                 @endif  --}}
           
-            
+{{--             
             
 
-                {{--  {!! Form::open(['route' => ['books.destroy', $book->id], 'method' => 'DELETE']) !!}
-                <a href="{{ route('books.edit', $book->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                 {!! Form::open(['route' => ['books.store', $book->id], 'method' => 'POST']) !!}
                     <button type="submit" class="btn btn-sm btn-success ">Save</button>
-                    <button type="submit" class="btn btn-sm btn-danger ">Delete</button>
                 {!! Form::close() !!}  --}}
                 
       
