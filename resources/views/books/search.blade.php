@@ -7,9 +7,12 @@
 <div class="row">
     <div class="col-sm-12">
         <h1>Search for a Book</h1>
+        {!! Form::open(['route'=> 'books.search', 'method' => 'GET' ]) !!}
 
         @component('component.searchForm')
         @endcomponent
+
+        {!! Form::close() !!}
     </div>
 
     <div class="container">
@@ -22,7 +25,7 @@
 
 
       
- 
+        @if($results)
          @foreach($results as $book)
 
           <div class="row pb-3" style="border-bottom: 1px gray solid">
@@ -53,6 +56,12 @@
     
 
          @endforeach
+         @else 
+            <div class="col-sm-12">
+                <p>There are no results</p>
+            </div>
+
+        @endif
   
   
 

@@ -72,35 +72,44 @@ class BooksController extends Controller
 
      */
     //  /books/search/**
-    public function search()
+    public function search(Request $request)
     {
+        // $searchTerm = '"Harry Potter"';
+
+        $searchTerm = $request->get('Search');
+      
+            
+        
 
         $apiKey = env('APIKEY');
-        $searchTerm = '"Harry Potter"';
         $client = new \GuzzleHttp\Client();
         $request = $client->get('https://www.goodreads.com/search/index.xml?key=' . $apiKey . '&q=' . $searchTerm);
         $body = $request->getBody();
 
         $xml = new \SimpleXMLElement($body);
         $results = array();
-        foreach ($xml->search->results as $options) {
+ 
+            foreach ($xml->search->results as $options) {
 
-            $book = new Book([
-                'Title' => $options->work->best_book->title,
-                'Author' => $options->work->best_book->author->name,
-                'hasRead' => false,
-                'Saved' => false
+                $book = new Book([
+                    'Title' => $options->work->best_book->title,
+                    'Author' => $options->work->best_book->author->name,
+                    'hasRead' => false,
+                    'Saved' => false
+    
+                ]);
+    
+                $results[]= $book;
+    
+            }
+        
 
-            ]);
-
-            $results[]= $book;
-
-        }
+       
 
 
 
 
-
+        // return view(search.result, compact('service','city'));
         return view('books.search')->with('results', $results);
     }
 
@@ -145,6 +154,8 @@ class BooksController extends Controller
         return redirect()->route('books.index');
     }
 
+
+  
 
 
 

@@ -3,7 +3,7 @@
     {{-- name --}}
   
     {{ Form::label('Search', 'Search', ['class' => 'control-label']) }}
-    {{ Form::text('Search', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Search'])}}
+    {{ Form::text('Search', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Search for a book'])}}
 
 
     
